@@ -8,6 +8,7 @@
   margin: auto;
   max-width: 375px;
   background-color: var(--black);
+  background-attachment: fixed;
 }
 
 /* стилизация header */
