@@ -1,4 +1,19 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  /* Переменные для вашего проекта */
+  /* переменные для фонового изображения */
+  --header-bg-img: url(../images/cover-image-dark.png);
+  /* переменные для цвета */
+  --black: #000028;
+  --pink: #f1b2ce;
+  --fuchsia: #ff0070;
+  --violet: #db00ff;
+  /* переменные для шрифта и стилизации текста */
+  --main-font: "IBM Plex mono", Helvetica, Arial, sans-serif;
+  --size: 18px;
+  --sizecustom-mob: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --sizecustom-desc: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --bold: 700;
+  --normal: 400;
+  --cover-title-size: 116px;
+  --cover-title-lh: 83%;
+}

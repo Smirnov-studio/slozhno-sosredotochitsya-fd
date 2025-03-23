@@ -9,8 +9,86 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-img-light: url(../images/cover-image-light.png);
+  --pink-for-light: #fff1f7;
+  --black-for-light: #353430;
+  --pink-for-cover-light: #ffc2e6;
+  --dark-pink: #ff8dcb;
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  background-color: var(--pink-for-light);
+}
+
+.theme-light .header {
+  /* Вам также нужно будет написать ряд подобных селекторов */
+  background-image: var(--bg-img-light);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.theme-light .header__decorate {
+  display: none;
+}
+
+.theme-light .header::before {
+  border-color: var(--black-for-light);
+}
+
+.theme-light .header::after {
+  border-color: var(--black-for-light);
+}
+
+.theme-light .header__theme-menu {
+  padding-top: 20px;
+}
+
+.theme-light .header__theme-menu-button {
+  color: var(--black-for-light);
+}
+
+.theme-light .header__theme-menu-button_active {
+  border-color: var(--black-for-light);
+}
+
+.theme-light .cover-title {
+  color: var(--pink-for-cover-light);
+  text-shadow: 4px 4px var(--dark-pink);
+}
+
+.theme-light .header__title {
+  background-color: var(--dark-pink);
+  color: var(--black-for-light);
+}
+
+.theme-light .content__title {
+  color: var(--black-for-light);
+}
+
+.theme-light .content__title-decoration {
+  background-color: var(--dark-pink);
+  color: var(--black-for-light);
+}
+
+.theme-light .content__subtitle {
+  background-color: var(--dark-pink);
+  color: var(--black-for-light);
+}
+
+.theme-light .text {
+  color: var(--black-for-light);
+}
+
+.theme-light .footer-title {
+  color: var(--pink-for-cover-light);
+  text-shadow: 4px 4px var(--dark-pink);
+}
+
+.theme-light .footer::before {
+  border-color: var(--black-for-light);
+}
+
+.theme-light .footer::after {
+  border-color: var(--black-for-light);
 }
