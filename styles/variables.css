@@ -1,12 +1,12 @@
 :root {
   /* Переменные для вашего проекта */
-  /* переменные для фонового изображения */
-  --header-bg-img: url(../images/cover-image-dark.png);
+  /* переменная для фонового изображения */
+  --bg-img: url(../images/cover-image-dark.png);
   /* переменные для цвета */
-  --black: #000028;
+  --bg-color: #000028;
   --pink: #f1b2ce;
-  --fuchsia: #ff0070;
-  --violet: #db00ff;
+  --cover-color: #db00ff;
+  --shadow-color: #ff0070;
   /* переменные для шрифта и стилизации текста */
   --main-font: "IBM Plex mono", Helvetica, Arial, sans-serif;
   --size: 18px;
