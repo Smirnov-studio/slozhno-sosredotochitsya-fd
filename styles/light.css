@@ -10,97 +10,31 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-img: url(../images/cover-image-light.png);
-  --bg-color: #fff1f7;
-  --dark-color: #353430;
+  --bg-color: #353430;
+  --text-color: #353430;
+  --accent-color: #fff1f7;
   --cover-color: #ffc2e6;
   --shadow-color: #ff8dcb;
+  --decor-item-color: #353430;
+  --subtitle_color: #353430;
 }
 @media (prefers-color-scheme: light) {
   :root {
     --bg-img: url(../images/cover-image-light.png);
-    --bg-color: #fff1f7;
-    --dark-color: #353430;
+    --bg-color: #353430;
+    --text-color: #353430;
+    --accent-color: #fff1f7;
     --cover-color: #ffc2e6;
-    --shadow-color: #ff8dcb;   
-   }
- }
-
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  background-color: var(--bg-color);
-}
-
-.theme-light .header {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  background-image: var(--bg-img);
-  background-size: cover;
-  background-attachment: fixed;
+    --shadow-color: #ff8dcb;
+    --decor-item-color: #353430;
+    --subtitle_color: #353430;
+  }
 }
 
 .theme-light .header__decorate {
   display: none;
 }
 
-.theme-light .header::before {
-  border-color: var(--dark-color);
+.theme-light .header__theme-menu-button:hover {
+  border: 1px solid #32312d66;
 }
-
-.theme-light .header::after {
-  border-color: var(--dark-color);
-}
-
-.theme-light .header__theme-menu {
-  padding-top: 20px;
-}
-
-.theme-light .header__theme-menu-button {
-  color: var(--dark-color);
-}
-
-.theme-light .header__theme-menu-button_active {
-  border-color: var(--dark-color);
-}
-
-.theme-light .cover-title {
-  color: var(--cover-color);
-  text-shadow: 4px 4px var(--shadow-color);
-}
-
-.theme-light .header__text {
-  background-color: var(--shadow-color);
-  color: var(--dark-color);
-}
-
-.theme-light .content__title {
-  color: var(--dark-color);
-}
-
-.theme-light .content__title-decoration {
-  background-color: var(--shadow-color);
-  color: var(--dark-color);
-}
-
-.theme-light .content__subtitle {
-  background-color: var(--shadow-color);
-  color: var(--dark-color);
-}
-
-.theme-light .text {
-  color: var(--dark-color);
-}
-
-.theme-light .footer-title {
-  color: var(--cover-color);
-  text-shadow: 4px 4px var(--shadow-color);
-}
-
-.theme-light .footer::before {
-  border-color: var(--dark-color);
-}
-
-.theme-light .footer::after {
-  border-color: var(--dark-color);
-}
-
-
-

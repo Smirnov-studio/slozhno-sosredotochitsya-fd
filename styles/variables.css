@@ -4,9 +4,12 @@
   --bg-img: url(../images/cover-image-dark.png);
   /* переменные для цвета */
   --bg-color: #000028;
-  --pink: #f1b2ce;
+  --accent-color: #000028;
+  --text-color: #f1b2ce;
   --cover-color: #db00ff;
   --shadow-color: #ff0070;
+  --decor-item-color: #ff0070;
+  --subtitle_color: #ff0070;
   /* переменные для шрифта и стилизации текста */
   --main-font: "IBM Plex mono", Helvetica, Arial, sans-serif;
   --size: 18px;
