@@ -18,6 +18,7 @@
   --decor-item-color: #353430;
   --subtitle_color: #353430;
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     --bg-img: url(../images/cover-image-light.png);
@@ -28,6 +29,14 @@
     --shadow-color: #ff8dcb;
     --decor-item-color: #353430;
     --subtitle_color: #353430;
+  }
+
+  .theme-auto .header__decorate {
+    display: none;
+  }
+
+  .theme-auto .header__theme-menu-button:hover {
+    border: 1px solid #32312d66;
   }
 }
 
