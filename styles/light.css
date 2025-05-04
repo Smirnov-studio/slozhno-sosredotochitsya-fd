@@ -10,9 +10,9 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-img: url(../images/cover-image-light.png);
+  --bg-color-accent: #fff1f7;
   --bg-color: #353430;
   --text-color: #353430;
-  --accent-color: #fff1f7;
   --cover-color: #ffc2e6;
   --shadow-color: #ff8dcb;
   --decor-item-color: #353430;
@@ -22,9 +22,9 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-img: url(../images/cover-image-light.png);
+    --bg-color-accent: #fff1f7;
     --bg-color: #353430;
     --text-color: #353430;
-    --accent-color: #fff1f7;
     --cover-color: #ffc2e6;
     --shadow-color: #ff8dcb;
     --decor-item-color: #353430;

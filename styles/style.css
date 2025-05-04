@@ -6,6 +6,7 @@
   grid-template-rows: auto;
   gap: 40px;
   min-width: 375px;
+  background-color: var(--bg-color-accent);
   background-image: var(--bg-img);
   background-size: cover;
   background-position: center;
@@ -18,7 +19,7 @@
   height: 100vh;
   min-height: 668px;
   display: grid;
-  grid-template-rows: 1fr 192px 1fr;
+  grid-template-rows: 1fr min-content 1fr;
   position: relative;
   box-sizing: border-box;
   padding-left: 10px;
@@ -83,8 +84,9 @@
 
 .header__theme-menu-list {
   display: inherit;
-  gap: 11.5px;
+  gap: 15px;
   list-style-type: none;
+  margin-top: 10px;
 }
 
 .header__theme-menu-button {
@@ -139,7 +141,6 @@
   display: inherit;
   gap: 50px;
   box-sizing: border-box;
-  background-color: var(--accent-color);
 }
 
 /* стилизация section */
@@ -164,14 +165,17 @@
   color: var(--subtitle_color);
 }
 
-.container__article {
-  display: grid;
-  gap: 20px;
+.article__causes {
+  margin-bottom: 20px;
 }
 
-.article {
+.article__causes:last-child {
+  margin-bottom: 0;
+}
+
+.container__article {
   display: grid;
-  gap: 10px;
+  row-gap: 20px;
 }
 
 .content__title-decoration {
@@ -185,18 +189,16 @@
   font-weight: var(--bold);
   color: var(--subtitle_color);
   background-color: var(--shadow-color);
+  margin-bottom: 10px;
 }
 
 .content__subtitle-mod {
   color: var(--bg-color);
 }
 
-.content__subtitle-mod-causes {
-  margin-bottom: 10px;
-}
-
 .content__subtitle-pictures {
   color: var(--bg-color);
+  margin-bottom: 0;
 }
 
 .content__subtitle-decoration {
@@ -227,6 +229,11 @@
   font-weight: var(--normal);
   line-height: 23.4px;
   color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.text:last-child {
+  margin-bottom: 0;
 }
 
 .gallery {
@@ -281,7 +288,7 @@
   .header {
     min-height: 1024px;
     padding: 20px 20px 20px 0;
-    grid-template-rows: 1fr 99px 1fr;
+    grid-template-rows: 1fr min-content 1fr;
   }
 
   .decorated-zone::before {
@@ -300,9 +307,8 @@
     width: 52px;
   }
 
-  .header__theme-menu {
+  .header__theme-menu-list {
     margin-top: 0;
-    align-self: center;
   }
 
   .cover-title {
@@ -419,7 +425,7 @@
 @media (width >= 1024px) {
   .header {
     min-height: 768px;
-    grid-template-rows: 1fr 130px 1fr;
+    grid-template-rows: 1fr min-content 1fr;
   }
 
   .header__theme-menu {
@@ -456,6 +462,7 @@
 
   .container__article {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
 
   .content__title-causes {
